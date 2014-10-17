@@ -31,11 +31,13 @@ $CPANM Crypt::SMIME
 $CPANM Image::Magick@6.86
 $CPANM GraphViz
 $CPANM Net::FTP
+$CPANM Net::SFTP
 $CPANM Email::MIME::Attachment::Stripper
 $CPANM Pod::Checker
 $CPANM REST::Client
 $CPANM Test::WWW::Selenium
 $CPANM JSON::RPC::Client
+$CPANM Perl::Tidy
 
 # Configure bugs database
 /usr/bin/mysqld_safe &
