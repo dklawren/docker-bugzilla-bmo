@@ -5,6 +5,9 @@ MAINTAINER David Lawrence <dkl@mozilla.com>
 ENV BUGZILLA_REPO https://git.mozilla.org/webtools/bmo/bugzilla.git
 ENV BUGZILLA_BRANCH master
 
+# Extra software
+RUN yum install -y cvs rsh jade xorg-x11-server-Xvfb firefox java x11vnc; yum clean all
+
 # Bugzilla configuration
 ADD checksetup_answers.txt /checksetup_answers.txt
 ADD bugzilla_config.sh /bugzilla_config.sh
